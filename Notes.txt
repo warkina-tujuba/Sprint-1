@@ -1,0 +1,277 @@
+Week 1 Sprint
+
+				////////////////////  \\\\\\\\\\\\\\\
+
+					* Command Line *
+
+Learning Competencies 
+	● Can you Identify your location
+	● Can you navigate between directories
+	● Can you create new and delete existing directories and files
+	● Can you open files
+
+Introduction
+	Command lines are a method of navigating your computer. Instead of a mouse, you use text commands to perform tasks. Command lines allow you to navigate around with ease - just as one would click through 	Finder on Mac to open, create, delete, or move folders you can do the same with a command line. 
+
+	There are key commands you need to familiarise yourself with, these are below. The 
+
+	Command                                      What it does
+
+	pwd                                          Identify 
+	cd                                           Move into a file
+	cd ..                                        Move back out of a file
+	ls                                           List file contents 
+	mkdr                                         (Mk) = make (dr) = new directory
+	mv                                           Rename (move) directory
+	rm -rf                                       Remove/delete a directory 
+	clear                                        Refreshes terminal
+	touch                                        Create a file 
+	Open     [This needs to be in quotation marks i.e. open “document.txt”]
+
+
+Review & Reflection Quiz: Command Line
+
+	1. What is another name for a “directory”?   
+	2. Match the following commands with what they do 
+
+		cd = 
+
+		rm -rf =
+
+		pwd =
+	
+		ls = 
+
+		Mkdr =
+
+	3. Use the terminal and commands to complete the following tasks.  	Underneath each step write out the commands you used and what they do. Someone should be able 	to follow your steps 
+		a. Create a new folder named “Week 1 Commands” 
+
+
+ 
+		b. Create a text document (.txt) in the file titled “This is how we do it” in your documents folder.
+
+
+
+ 		c. Open the folder   		///////////////////           \\\\\\\\\\\\\\\\\\\\
+
+
+					Version Control with Git
+Learning Competencies 
+By the end of this exploration, you should be able to:
+	● Explain what version control is and what it does
+	● Understand what Git is
+	● Understand what GitHub is
+
+Introduction
+
+Version Control Systems are downloadable software that is used to track changes in folder, especially when working with several developers on the same code. It allows groups to work on the same code simultaneously without overwriting each other's work. 
+
+	Version Control Software exists in various forms and is merely a system that tracks changes to files over time. Coders use version control to maintain a clear record of changes, 	coordinate with team members, rollback to previous versions if needed, as well as merge different contributions into a cohesive whole. Essentially, it provides a structured approach to managing code, ensuring stability and accountability while preserving the integrity of the project.
+
+	It is not a programming language like JavaScript, Ruby, or C#.  
+	The most widely used Version Control Software is called Git and is favoured for its delocalised nature in allowing 	numerous collaborators to work on code. 
+
+	“Github” is a company that provides file hosting online. I.e. Git is a (software) tool that you download while 		GitHub is a service that you sign up to. Github adds to this delocalised nature. 
+
+The differences
+	Version Control Software:
+		Any system that tracks changes to files over time. 
+	Git:
+		A version control system that tracks changes in files. Enabling multiple people to
+		collaborate on a project. It allows you to save snapshots of your project over time, making 	it easy to 		manage, revert, and merge changes. 
+	Github
+		A web-based hosting service where developers can store their Git repositories, collaborate on projects, 		track changes, and manage code together.
+	Local Git
+		Version control operations on a single machine. All changes and repositories are confined to that 			machine.
+	Distributed Git 
+		Involves multiple copies of the repository across different machines. Changes are shared between 			local and remote repositories, enabling collaboration across locations.
+
+
+Review & Reflection Quiz: Git, Version Control Software & Github
+
+	1. Which of the following is false?  
+		a. Git is a system that tracks changes to files over time. 
+		b. Github is a type of distributed version control system. 
+		c. GitHub is a service that you sign up to  
+	2. What is the main purpose of Git? 
+		a. To create websites 
+		b. To track changes to files and help developers collaborate 
+		c. To write code 
+		d. To manage databases
+
+	3. "Version control operations on a single machine" is an example of what? 
+
+		a) Git 
+		b) Distributed Git
+		c) Local git
+		d) Github 
+
+
+			/////////////////////// \\\\\\\\\\\\\\\\\\\\\\\\
+
+
+				Install and Explore Git
+
+
+Learning Competencies 
+By the end of this exploration, you should be able to:
+	● Install Git
+	● Navigate repositories in GitHub
+	● Create a new repository
+	● Clone a repository
+	● Determine repository status
+	● Stage commits to a repository
+
+	Introduction
+Quick refresher; Version control software - is a downloadable software that manages changes for code and allows for multiple parties to work on the same project without overwriting each other ~ amongst many other things. Git is a type of version control software. With Git, each project has a repository (… directory… folder… all the same shit). 
+
+A repository is a collection of all the versions of the project along with key information: 
+	❖ What order the changes occurred 
+	❖ A description of each change 
+	❖ Who was responsible for the change 
+
+Git doesn't automatically keep track of your changes - you have to tell it when you want to save a version. This is called committing. Think of it like saving your progress in a game, a checkpoint. When you commit, you are saving your work at that point in time. Each saved version is called a commit. Usually, you only commit when you've finished a part of your project, but sometimes you might commit smaller changes, like fixing a spelling mistake or correcting a broken link. This way, Git keeps a history of all your saved versions (commits), so you can go back and see what you did before.
+
+Git has a set of tools to review your project history. It allows you to see projects from commencement to now, allowing you to view or filter the complete list of commits as well as switch between versions.  
+
+Git Commands
+All git commands begin with the word; “git”. There are numerous commands for the terminal to communicate directly with git and github but for now, we only need to know a few. See the table below:
+
+	Command & Function
+
+git clone
+	Copy an existing repository from a target location (like GitHub) to 	your computer, 		creating a local version.
+git config
+	Configure Git settings, especially useful when setting up Git for the 	first time. It lets 	you set user information, preferences, and more.
+git status
+	Check the current state of your repository. It shows which files have 	changed, which need 	to be committed, and which branch you are working 	on.
+git init
+	Initialise a new Git repository in your current folder. This sets up 	the folder to use 	Git, allowing you to start tracking changes.
+git add
+	Add new or changed files to the staging area. This prepares them to be 	included in the next 	commit, making them part of Git's snapshots.
+git pull
+	Update your local repository with the latest changes from a remote repository. It ensures you 	have the most up-to-date version.
+git commit
+	Save your changes by taking a snapshot of the repository. Use git 	commit -m “message 	here” to add a description to your snapshot.
+git branch
+	This command will let you build a new branch (or timeline of commits, 	changes and file 	additions) that is entirely your own. Your title goes 	after the command. If you wanted a 	new branch called “cats”, you’d 	type git branch cats.
+git push
+	Upload your local commits to a remote repository, such as GitHub. This 	makes your changes 	visible and available online.
+git checkout
+	Allows you to take a look at a different branch in your project. You 	can use this command 	as git checkout main to look at the main branch or git checkout cats to look at the cats' 	branch.
+git help
+	Display Git commands. Use git help to see common commands or git help 	<command> for 		specific details.
+git merge
+	When you’re done working on a branch, you can merge your changes back 	to the main branch, 	which is visible to all collaborators.
+
+
+
+
+Review & Reflection Quiz: Git, Version Control Software & Github
+
+	1. Which of the following is false?  
+		a. Git is a system that tracks changes to files over time. 
+
+
+
+			/////////			\\\\\\\\\\
+
+			
+
+
+
+
+		Working Directory, Staging Index and Repository
+
+Working Directory:  	The working directory is like the photo studio where you take and edit 	your pictures. It's 	where you make all your changes, such as taking new photos or editing existing ones. In Git, 	this is the place where you are actively working on your files and making changes.
+
+Stage/Staging Index:  	The staging index, or staging area, is like a special folder where you 	put the photos you 	want to upload. Before uploading, you select and prepare your edited pictures, making sure 	they are ready. In Git, this is where you put the changes you want to commit. You review and 	organise your changes here before saving them.
+
+Repository:  	The repository is like your online photo album where you upload your selected pictures. Once 	you've finished editing and preparing them in your staging folder, you upload the pictures to 	your album. In Git, the repository is where all your committed snapshots are stored. It keeps 	a history of all your changes, just like an album keeps all your uploaded photos.
+
+I.e: 
+
+	Create a file (untracked) → {git add} --> Staging area → first Commit --//→ Do some work 	--// → Stage → Commit --//→ Do some work 
+
+Do a little bit of work, stage, commit… do a bit of work, stage, commit. 
+
+Git status - What has changed since last commit.
+To start tracking a git, you do the command “git add [Document]”
+Doing another “Git status” to check
+
+
+Review & Reflection Quiz: Git, Version Control Software & Github
+
+	1. What is the process of telling Git to save a version of work called?   	
+	  ___________________________________________  
+	2.Match the following Git terminology with their definitions:  
+		Term									Meaning
+
+		Command Line								Any system that tracks changes to files over time. Basically the purpose Git was designed for. This is like once you 												have taken your pictures and you go to edit it - you can see all the changes you’ve made.
+
+		Repository  								This is the process of making a version of the original and making changes without it affecting the source/original. This 											allows multiple people to work on a project simultaneously while having an anchor, or checkpoint, to come back too. Once 											everyone is done, they can merge changes back into the main project, ensuring nothing gets mixed up. This is like making a copy 											of your photo album to work on photoshop while still having the original unchanged picture saved in another.
+
+		Version Control System							The act of commanding Git to save a version (committing) at this point in time. Projects are made up of a collection of these. 											This is the act of taking the picture
+
+		Commit 									Terminal and iTerm2 are examples of these. This is a computer program we use to input instructions for Git. This is the act of 											instructing your photographer of the picture
+
+		Branch									A digital folder that contains everything related to your project, including code files, images, documentation, and more. These 											can be local (stored on your computer) or remote (stored online, like on GitHub). 											This is like an album where you store all your "pictures" and have it organised accordingly.
+
+
+	3. Which of the following is NOT a value proposition for Git?  
+		a. The ability to label a change
+		b. The ability to give a detailed Introduction of why a change was made
+		c. The ability to move between different versions of the same document
+		d. The ability to undo change A, make edit B, then get back change A without affecting edit B
+		e. All are value propositions of Git 
+	4. Which of the following is false?  
+		a. Version Control System is the same thing as a “Source Code Manager”
+		b. Version Control System is the same thing as “Git”
+		c. Version Control System is the same thing as “Commit”
+		d. Repository is the same thing as a directory  
+	5. TRUE or FALSE - When a commit is made, only the changes that are in the Staging Index are saved in the repository? 
+		a. TRUE
+		b. FALSE  
+6.	Name the labeled from following of a Git Workflow
+
+
+a.	A  ____________________ 
+b.	B   ____________________  
+c.	C  ____________________ 
+d.	D  ____________________
+ 						/////////////////////////////////  \\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+
+								Track and Commit
+
+Learning Competencies 
+By the end of this exploration, you should be able to:
+	● Define "commit"
+	● Demonstrate best practices for commit messages
+	● Describe the three states of a file in git (working, staged, commit)
+
+Introduction
+	A “commit” is the save point where you can go back too. Git works by remembering changes to files inside a git folder, it keeps account of your commits as you progress. Commits are important for this as well 	as making it easier to find errors if you can find where it began - it is recommended to commit often. 
+
+	Commit messages are notes left with the commit. Leaving good and informative commit messages so every knows what each commit includes. 
+
+How to make a commit
+	You first have to let git know to follow and track a certain folder. Before doing this you can input "git status" into terminal to see what files are being tracked and where they are. This is what we 	referred to as the "Git workflow" prior. Any file git is tracking will be shown when the git status command is inputted. Files will either be in the staging index in green or under the working directory, in 	red. 
+
+1.	A “commit” i
+
+
+
+Branch, Pull, Merge
+Learning Competencies 
+By the end of this exploration, you should be able to:
+●	Explain what a branch is and why we use them
+●	Explain what a pull request is and why we use them
+●	Understand the concept of merging branches
+Introduction
+Branching is the act of creating a testing room, an environment where you can try new things. Branching is used as a tool to manage the flow caused by different ideas and features that have varying completion times. This can get congested so a branch can be created to continue. Changes you make on a branch won’t affect the main branch - a branch will only merge once it is reviewed by a colloberator. 
+
+The main branch should remain up to date and consistent. The checkpoint will move as progress is made, the main branch should always be running correctly, if not, go back to the last checkpoint (aka commit) when code was working. 
+
+
